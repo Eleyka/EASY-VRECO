@@ -1,9 +1,13 @@
-
-
-
 function initMap() {
   var laboratoriaLima = {lat: -12.1191427,
     lng: -77.0349046};
+    /* Autocompletado */
+  var inputGoing = document.getElementById('pointGoing');
+  var inputDestiny = document.getElementById('pointDestiny');
+
+  new google.maps.places.Autocomplete(inputGoing);
+  new google.maps.places.Autocomplete(inputDestiny);
+  /* Fin de  Autocompletado */
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 18,
     center: laboratoriaLima
@@ -50,7 +54,5 @@ function buscar() {
   }
 }
 document.getElementById('encuentrame').addEventListener('click', buscar);
-
-
 
 
