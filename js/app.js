@@ -16,36 +16,41 @@ function initMap() {
   });
 }
 function buscar() {
-  if (navigator.geolocation) {
+  if (navigator.geolocation) {//
     var latitud, longitud;
+
     var funcionExito = function(posicion) {
       latitud = posicion.coords.latitude;
       longitud = posicion.coords.longitude;
+
+      /* Autocompletado */
+      var inputGoing = document.getElementById('pointGoing');
+      var inputDestiny = document.getElementById('pointDestiny');
+  
+      new google.maps.places.Autocomplete(inputGoing);
+      new google.maps.places.Autocomplete(inputDestiny); /* Autocompletado */
       
       var map = new google.maps.Map(document.getElementById('map')); 
       map.setZoom(18);
       map.setCenter({lat: latitud,
         lng: longitud});
+
       var miUbicacion = new google.maps.Marker({
         position: {lat: latitud,
           lng: longitud},
         map: map,
       });
     };
+
     var funcionError = function(error) {
       alert('Tenemos un problema con encontrar su ubicación');
     }; 
-    navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
+
+    navigator.geolocation.getCurrentPosition(funcionExito, funcionError);//
   }
 }
 document.getElementById('encuentrame').addEventListener('click', buscar);
 
-//
-/* var inputGoing = document.getElementById('ponit-going');
-console.log(inputGoing);
-var inputDestiny = document.getElementById('ponit-destiny')
 
-new google.maps.places.Autocomplete(inputGoing);
-new google.maps.places.Autocomplete(inputDestiny);
 
- */
+
