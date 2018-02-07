@@ -8,8 +8,6 @@ function initMap() {
   new google.maps.places.Autocomplete(inputGoing);
   new google.maps.places.Autocomplete(inputDestiny);
   /* Fin de  Autocompletado */
-
- 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 18,
     center: laboratoriaLima
