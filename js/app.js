@@ -1,3 +1,6 @@
+
+
+
 function initMap() {
   var laboratoriaLima = {lat: -12.1191427,
     lng: -77.0349046};
@@ -37,3 +40,12 @@ function buscar() {
 }
 document.getElementById('encuentrame').addEventListener('click', buscar);
 
+//
+/* var inputGoing = document.getElementById('ponit-going');
+console.log(inputGoing);
+var inputDestiny = document.getElementById('ponit-destiny')
+
+new google.maps.places.Autocomplete(inputGoing);
+new google.maps.places.Autocomplete(inputDestiny);
+
+ */
