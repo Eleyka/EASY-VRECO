@@ -26,14 +26,7 @@ function buscar() {
     var funcionExito = function(posicion) {
       latitud = posicion.coords.latitude;
       longitud = posicion.coords.longitude;
-
-      /* Autocompletado */
-      var inputGoing = document.getElementById('pointGoing');
-      var inputDestiny = document.getElementById('pointDestiny');
-  
-      new google.maps.places.Autocomplete(inputGoing);
-      new google.maps.places.Autocomplete(inputDestiny); /* Autocompletado */
-      
+     
       var map = new google.maps.Map(document.getElementById('map')); 
       map.setZoom(18);
       map.setCenter({lat: latitud,
