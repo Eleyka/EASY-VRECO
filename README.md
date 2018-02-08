@@ -81,6 +81,12 @@ Directorio interactivo que permite añadir tipografias a la web.
 ![](assets/img/trazarRuta.png).
 ***
 
+## Funcionalidad
+![](assets/img/DesktopEV.gif).
+#### Desktop
+![](assets/img/mobileEV.gif).
+***
+#### Mobile
 
 ## Colaboradores
 
