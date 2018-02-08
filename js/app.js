@@ -1,9 +1,11 @@
 // Inicializamos mapa
 function initMap() {
-  const laboratoriaLima = {lat: -12.1191427,
-    lng: -77.0349046};
+  const laboratoriaLima = {
+    lat: -12.1191427,
+    lng: -77.0349046
+  };
 
-    /* Autocompletado */
+  /* Autocompletado */
   let inputGoing = document.getElementById('pointGoing');
   let inputDestiny = document.getElementById('pointDestiny');
 
@@ -18,7 +20,7 @@ function initMap() {
   let marker = new google.maps.Marker({
     position: laboratoriaLima,
     map: map,
-  
+
     /*  title: 'hola',
     animation: google.maps.Animation.DROP */
   });
@@ -27,13 +29,13 @@ function initMap() {
   let directionsService = new google.maps.DirectionsService;
   let directionsDisplay = new google.maps.DirectionsRenderer;
 
-  let calculateAndDisplayRoute = (directionsService, directionsDisplay) =>{
+  let calculateAndDisplayRoute = (directionsService, directionsDisplay) => {
     directionsService.route({
       origin: inputGoing.value,
       destination: inputDestiny.value,
       travelMode: 'DRIVING'
 
-    }, (response, status) =>{
+    }, (response, status) => {
       if (status === 'OK') {
         directionsDisplay.setDirections(response);
       } else {
@@ -42,7 +44,7 @@ function initMap() {
     });
   };
   directionsDisplay.setMap(map);
-  let trazarRuta = () =>{
+  let trazarRuta = () => {
     calculateAndDisplayRoute(directionsService, directionsDisplay);
   };
   document.getElementById('trazar-ruta').addEventListener('click', trazarRuta);
@@ -56,14 +58,16 @@ function initMap() {
       let funcionExito = (posicion) => {
         latitud = posicion.coords.latitude;
         longitud = posicion.coords.longitude;
-     
-        let map = new google.maps.Map(document.getElementById('map')); 
-        map.setZoom(15);
-        map.setCenter({lat: latitud,
-          lng: longitud});
 
-        let person = 'assets/icons/person.png'; 
-            
+        let map = new google.maps.Map(document.getElementById('map'));
+        map.setZoom(15);
+        map.setCenter({
+          lat: latitud,
+          lng: longitud
+        });
+
+        let person = 'assets/icons/person.png';
+
         /* Trazar ruta */
         let directionsService = new google.maps.DirectionsService;
         let directionsDisplay = new google.maps.DirectionsRenderer;
@@ -74,7 +78,7 @@ function initMap() {
             destination: inputDestiny.value,
             travelMode: 'DRIVING'
 
-          }, (response, status) =>{
+          }, (response, status) => {
             if (status === 'OK') {
               directionsDisplay.setDirections(response);
             } else {
@@ -90,25 +94,27 @@ function initMap() {
         /* Fin de trazar ruta */
 
         let miUbicacion = new google.maps.Marker({
-          position: {lat: latitud,
-            lng: longitud},
+          position: {
+            lat: latitud,
+            lng: longitud
+          },
           map: map,
           icon: person,
           title: 'Hola, hola ...!!!Aquí estoy',
           animation: google.maps.Animation.DROP
         });
       };
-      
+
       let funcionError = (error) => {
         alert('Tenemos un problema con encontrar su ubicación');
-      }; 
+      };
 
       navigator.geolocation.getCurrentPosition(funcionExito, funcionError);//
-     
+
     }
-    
+
   }
-  
-  
+
+
   document.getElementById('encuentrame').addEventListener('click', buscar);
 };
