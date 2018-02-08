@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Proyecto</title>
+  <title>Reto 2</title>
   <!-- Materialize -->
   <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,59 +17,50 @@
 
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo center">Reto II</a>
+      <a href="#" class="brand-logo center">Easy-Vreco</a>
     </div>
   </nav>
   <section>
     <div class="row">
-        <div class="col m6 center">
-            <img src="assets/img/miruta.jpg" class="miruta" alt="miruta">
-            
-        </div>
-        <div class="col m6 mgtop_form">
-
-            <div class="row center">
-                <form class="col s12">
-                  <div class="row">
-                    <div class="col s12 ">
-                      <a id="encuentrame" class="waves-effect waves-light btn mgtop_btn">
-                        <i class="material-icons left">directions_walk
-                        </i>Encuentrame</a>
-                    </div>
-                    <div class="input-field col s12 ">
-                      <i class="material-icons prefix">adjust</i>
-                      <input id="pointGoing" type="text" class="validate" placeholder="Ingresa tu punto de partida">
-            
-                    </div>
-                    <div class="input-field col s12 ">
-                      <i class="material-icons prefix">near_me</i>
-                      <input id="pointDestiny" type="text" class="validate" placeholder="Ingresa tu destino">
-            
-                    </div>
-                    <div class="col s12 ">
-                      <a id="trazar-ruta" class="waves-effect waves-light btn mgtop_btn">
-                        <i class="material-icons left">place</i>Trazar ruta</a>
-                    </div>
-            
-                  </div>
-                </form>
+      <div class="col m6 center">
+        <img src="assets/img/miruta.jpg" class="miruta" alt="miruta">
+      </div>
+      <div class="col m6 mgtop_form">
+        <div class="row center">
+          <form class="col s12">
+            <div class="row">
+              <div class="col s12 ">
+                <a id="encuentrame" class="waves-effect waves-light btn mgtop_btn">
+                  <i class="material-icons left">directions_walk
+                  </i>Encuentrame</a>
               </div>
+              <div class="input-field col s12 ">
+                <i class="material-icons prefix">adjust</i>
+                <input id="pointGoing" type="text" class="validate" placeholder="Ingresa tu punto de partida">
+              </div>
+              <div class="input-field col s12 ">
+                <i class="material-icons prefix">near_me</i>
+                <input id="pointDestiny" type="text" class="validate" placeholder="Ingresa tu destino">
+              </div>
+              <div class="col s12 ">
+                <a id="trazar-ruta" class="waves-effect waves-light btn mgtop_btn">
+                  <i class="material-icons left">place</i>Trazar ruta</a>
+              </div>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
-    
   </section>
   <div class="row">
-      <div id="map" class="col s8"></div>
-      
+    <div id="map" class="col s8"></div>
   </div>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqEVuT9g4BqrEVSi-8DAwlAAG5_8memgg&callback=initMap&libraries=places">
-
   </script>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
   <!-- Materialize -->
   <script type="text/javascript" src="vendors/materialize/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
-
 </body>
 
 </html>
