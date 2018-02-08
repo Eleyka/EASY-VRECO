@@ -71,22 +71,24 @@ Directorio interactivo que permite añadir tipografias a la web.
 
 ### ENCUENTRAME
 
-![](assets/img/encuentrame.png).
+![](assets/img/encuentrame.png)
 ***
 ### ENCUENTRAME HACKER EDITION
 
-![](assets/img/autocompletado.PNG).
+![](assets/img/autocompletado.PNG)
 ***
 ### EASY-VRECO
-![](assets/img/trazarRuta.png).
+![](assets/img/trazarRuta.png)
 ***
 
 ## Funcionalidad
-![](assets/img/DesktopEV.gif).
 #### Desktop
-![](assets/img/mobileEV.gif).
+![](assets/img/DesktopEV.gif)
 ***
 #### Mobile
+
+![](assets/img/mobileEV.gif)
+
 
 ## Colaboradores
 
