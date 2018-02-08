@@ -19,33 +19,33 @@
 
 5. Elaboración del README.
 
-#### 4. Recursos
+#### 2. Recursos
 
-##### 4.1. API Geolocalización
+##### 2.1. API Geolocalización
 
 Permite al usuario compartir su ubicación a las aplicaciones web si así lo desea.
 
-##### 4.1. API Google Maps
+##### 2.1. API Google Maps
 
 Permite crear aplicaciones para la Web y para dispositivos móviles que pueden personalizarse con imágenes satelitales, mapas de Street View y mapas interactivos.
 
-##### 4.2. Visual Studio Code
+##### 2.2. Visual Studio Code
 
 Editor de código fuente.
 
-##### 4.3. Jquery
+##### 2.3. Jquery
 
 Librería de JavaScript de código abierto que permite agregar interactividad y efectos visuales.
 
-##### 4.4. Materialize
+##### 2.4. Materialize
 
  Framework que permite facilitar el desarrollo.
 
-##### 4.5. Google Fonts
+##### 2.5. Google Fonts
 
 Directorio interactivo que permite añadir tipografias a la web.
 
-#### 5. Desarrollo de la librería
+#### 3. Desarrollo de la librería
 
 * Estructura semántica de HTML5
 * Maquetado
